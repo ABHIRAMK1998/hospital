@@ -1,0 +1,40 @@
+{% extends 'hospital/homebase.html' %}
+
+{% block content %}
+
+<head>
+  <style media="screen">
+    /* Custom styles */
+    .jumbotron {
+      background-color: #4caf50; /* Green */
+      color: white; /* Text color */
+      padding: 2rem 1rem;
+      border-radius: 0; /* Remove border radius */
+    }
+
+    .btn-primary {
+      background-color: #008CBA; /* Blue */
+      border-color: #008CBA; /* Blue */
+      color: white; /* Text color */
+      margin-right: 10px; /* Add some spacing between buttons */
+    }
+
+    .btn-primary:hover {
+      background-color: #005f6b; /* Darker blue on hover */
+      border-color: #005f6b; /* Darker blue on hover */
+    }
+  </style>
+</head>
+
+<br>
+<br>
+
+<div class="jumbotron" style="margin-bottom:0px;">
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/adminsignup" role="button">Register</a>
+    <a class="btn btn-primary btn-lg" href="/adminlogin" role="button">Login</a>
+  </p>
+</div>
+
+{% endblock content %}
